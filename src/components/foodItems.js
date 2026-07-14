@@ -1,7 +1,7 @@
 function foodite(params) {
   return `<div class="bg-white rounded-lg overflow-hidden">
               <div class="relative">
-                <img
+                <img data-food_id=" ${params.id}"
                   class="w-full cursor-pointer h-[150px] foodCart"
                   src="public/images/foods/${params.image_url}"
                   alt="food"
@@ -17,9 +17,9 @@ function foodite(params) {
                   <h4 class="text-body text-3">${params.name}</h4>
                   <strong class="text-xl">$ ${params.price}</strong>
                 </div>
-                <div class="bg-primary p-1.5 rounded-md">
-                  <img
-                    class="w-3 cursor-pointer"
+                <div class="bg-primary p-1.5 rounded-md ">
+                  <img data-id="${params.id}" 
+                    class="w-3 add-to-cart cursor-pointer"
                     src="public/images/plus.svg"
                     alt="plus icon"
                   />
