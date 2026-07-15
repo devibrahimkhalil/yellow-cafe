@@ -5,9 +5,9 @@ export function cartSection(item) {
                 
 ${item.items
   .map((items) => {
-    return `<div class="mb-[8px] flex border-[#ddd] border-[1px] rounded-[6px] bg-[url(../public/images/foods/${items.image_url})] bg-no-repeat bg-cover relative z-1 overflow-hidden">
+    return `<div class="mb-[8px] flex border-[#ddd] border-[1px] rounded-[6px]  bg-no-repeat bg-cover relative z-1 overflow-hidden" style="background-image: url('/images/foods/${items.image_url}')">
 
-                    <div class="bg-primary/45 absolute top-0 left-0 w-full h-full -z-1"></div>
+                <div class="bg-primary/45 absolute top-0 left-0 w-full h-full -z-1"></div>
                     
                     <div class="w-full px-1.5 py-1">
                         <span class="text-white">${items.name}</span>
